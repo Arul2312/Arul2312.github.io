@@ -20,10 +20,17 @@
 <div class="page" id="top">
 
 <nav aria-label="Sections">
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
+  <a class="nav-name" href="#top">Arul Bhardwaj</a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+  </div>
+  <div class="nav-logos" aria-hidden="true">
+    <img src="images/qualcomm.svg" alt="" class="qc">
+    <img src="images/bits.svg" alt="" class="bits">
+  </div>
 </nav>
 
 <header>
@@ -209,11 +216,15 @@
     reveal.forEach(function (el) { io.observe(el); });
   }
 
-  var links = document.querySelectorAll('nav a[href^="#"]');
+  var links = document.querySelectorAll('.nav-links a');
   var nav = document.querySelector('nav');
   var sections = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute('href')); });
   function update() {
     nav.classList.toggle('stuck', window.scrollY > 8);
+    var name = document.querySelector('header h1').getBoundingClientRect();
+    var compact = name.bottom < nav.offsetHeight;
+    nav.classList.toggle('compact', compact);
+    document.querySelector('.nav-name').tabIndex = compact ? 0 : -1;
     var y = window.scrollY + window.innerHeight * 0.3, current = null;
     sections.forEach(function (sec, i) { if (sec && sec.offsetTop <= y) current = i; });
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = sections.length - 1;
