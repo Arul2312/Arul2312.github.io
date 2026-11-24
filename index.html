@@ -199,6 +199,16 @@
     });
   } else if (btn) { btn.hidden = true; }
 
+  var reveal = document.querySelectorAll('main h2, .prose p, .rows li');
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('reveal-on');
+    document.querySelectorAll('.prose p').forEach(function (p, i) { p.style.transitionDelay = (i * 0.06) + 's'; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { e.target.classList.toggle('in', e.isIntersecting); });
+    }, { threshold: 0.12, rootMargin: '-6% 0px -6% 0px' });
+    reveal.forEach(function (el) { io.observe(el); });
+  }
+
   var links = document.querySelectorAll('nav a[href^="#"]');
   var nav = document.querySelector('nav');
   var sections = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute('href')); });
