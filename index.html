@@ -8,10 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Arul Bhardwaj">
+<meta property="og:description" content="Associate Engineer at Qualcomm, optimizing ML and GenAI models on Qualcomm chipsets.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arul2312.github.io/">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
+<a class="skip" href="#main">Skip to content</a>
+<div class="page" id="top">
 
 <nav aria-label="Sections">
   <a href="#about">About</a>
@@ -22,18 +28,18 @@
 
 <header>
   <div class="logos">
-    <a href="https://www.qualcomm.com" aria-label="Qualcomm"><img src="images/qualcomm.svg" alt="Qualcomm" class="qc"></a>
-    <a href="https://www.bits-pilani.ac.in/goa/" aria-label="BITS Pilani, Goa Campus"><img src="images/bits.svg" alt="BITS Pilani" class="bits"></a>
+    <a href="https://www.qualcomm.com" target="_blank" rel="noopener" aria-label="Qualcomm"><img src="images/qualcomm.svg" alt="Qualcomm" class="qc"></a>
+    <a href="https://www.bits-pilani.ac.in/goa/" target="_blank" rel="noopener" aria-label="BITS Pilani, Goa Campus"><img src="images/bits.svg" alt="BITS Pilani" class="bits"></a>
   </div>
   <h1><span class="line"><span>Arul</span></span><span class="line"><span>Bhardwaj</span></span></h1>
   <p class="contact">
-    <a href="mailto:arulbhardwaj@outlook.com">arulbhardwaj@outlook.com</a>
-    <a href="https://github.com/Arul2312">GitHub</a>
-    <a href="https://www.linkedin.com/in/arul-bhardwaj-464482320">LinkedIn</a>
+    <span class="email"><a href="mailto:arulbhardwaj@outlook.com">arulbhardwaj@outlook.com</a><button type="button" class="copy" data-copy="arulbhardwaj@outlook.com">Copy</button><span class="copied" role="status" aria-live="polite"></span></span>
+    <a href="https://github.com/Arul2312" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/arul-bhardwaj-464482320" target="_blank" rel="noopener">LinkedIn</a>
   </p>
 </header>
 
-<main>
+<main id="main">
 <section id="about">
   <h2>About</h2>
   <div class="prose">
@@ -52,7 +58,7 @@
         <h3>Video anomaly detection in wireless capsule endoscopy</h3>
         <p class="note">APPCAIR (BITS Pilani) and NTNU, with Prof. Ashwin Srinivasan, Prof. Tanmay Tulsidas Verlekar and Dr. Anuja Vats</p>
         <p>Unsupervised and weakly supervised anomaly detection on medical video. Patch-level early fusion of RGB and optical flow reached 92.50% accuracy and 92.15% F1. Intermediate fusion with Endo-FM blocks and CNN pyramids reached 91.9% accuracy and 91.2% F1. I also designed a multi-scale late-fusion model with dual-stream TimeSformer encoders and hierarchical cross-attention.</p>
-        <p><a href="https://github.com/Arul2312/Endo-FM-for-Polyp-Classification">Code on GitHub</a></p>
+        <p><a href="https://github.com/Arul2312/Endo-FM-for-Polyp-Classification" target="_blank" rel="noopener">Code on GitHub</a></p>
       </div>
     </li>
     <li>
@@ -61,7 +67,7 @@
         <h3>Multi-level graph attention network for drug-target interaction prediction</h3>
         <p class="note">BITS Pilani, with Dr. Hemant Rathore</p>
         <p>A graph attention network built on graph convolutions, trained on 306 drugs, 407 protein targets and 970 confirmed interactions. It achieved state-of-the-art results on benchmark datasets.</p>
-        <p><a href="https://github.com/Arul2312/Multi-Layer-Graph-Attention-Neural-Network-Model-for-Drug-Target-Interaction-Prediction">Code on GitHub</a></p>
+        <p><a href="https://github.com/Arul2312/Multi-Layer-Graph-Attention-Neural-Network-Model-for-Drug-Target-Interaction-Prediction" target="_blank" rel="noopener">Code on GitHub</a></p>
       </div>
     </li>
     <li>
@@ -70,7 +76,7 @@
         <h3>Association rule mining enhanced BERT for drug-target interaction prediction</h3>
         <p class="note">BITS Pilani, with Dr. Hemant Rathore</p>
         <p>A hybrid of association rule mining and BERT over protein sequences and SMILES. Rules mined from positive interactions mark relevant subsequences, which improved interpretability and performance. Training used mixed precision and class-balanced losses for imbalanced data.</p>
-        <p><a href="https://github.com/Arul2312/DM-Project">Code on GitHub</a></p>
+        <p><a href="https://github.com/Arul2312/DM-Project" target="_blank" rel="noopener">Code on GitHub</a></p>
       </div>
     </li>
   </ol>
@@ -139,7 +145,7 @@
         <h3>Graph-enhanced hybrid RAG engine</h3>
         <p class="note">GraphRAG, LangGraph, Neo4j, Qdrant</p>
         <p>Contextual chunking, dense and BM25 retrieval fused with Reciprocal Rank Fusion, plus query routing and graph traversal for multi-hop lookup.</p>
-        <p><a href="https://github.com/Arul2312/Hybrid-Rag">Code on GitHub</a></p>
+        <p><a href="https://github.com/Arul2312/Hybrid-Rag" target="_blank" rel="noopener">Code on GitHub</a></p>
       </div>
     </li>
     <li>
@@ -148,7 +154,7 @@
         <h3>Federated retrieval augmented generation</h3>
         <p class="note">ChromaDB, federated learning</p>
         <p>Privacy-preserving retrieval across 8 autonomous clients, with distributed embeddings, query routing and multi-source aggregation. No data is stored centrally.</p>
-        <p><a href="https://github.com/Arul2312/FederatedRAG">Code on GitHub</a></p>
+        <p><a href="https://github.com/Arul2312/FederatedRAG" target="_blank" rel="noopener">Code on GitHub</a></p>
       </div>
     </li>
     <li>
@@ -157,7 +163,7 @@
         <h3>LLM refund decision bot</h3>
         <p class="note">LangGraph, LangChain, OpenAI</p>
         <p>A refund workflow that maps a decision tree with 18+ terminal nodes, with LLM-driven information extraction, conditional routing and auditable decisions.</p>
-        <p><a href="https://github.com/Arul2312/Customer-Care-Chatbot">Code on GitHub</a></p>
+        <p><a href="https://github.com/Arul2312/Customer-Care-Chatbot" target="_blank" rel="noopener">Code on GitHub</a></p>
       </div>
     </li>
     <li>
@@ -166,7 +172,7 @@
         <h3>Named entity recognition with BERT</h3>
         <p class="note">LoRA, CoNLL-2003</p>
         <p>BERT fine-tuned with LoRA, reaching a 91.6% F1-score.</p>
-        <p><a href="https://github.com/Arul2312/Named-Entity-Recognition-NER-with-BERT">Code on GitHub</a></p>
+        <p><a href="https://github.com/Arul2312/Named-Entity-Recognition-NER-with-BERT" target="_blank" rel="noopener">Code on GitHub</a></p>
       </div>
     </li>
   </ol>
@@ -176,8 +182,37 @@
 
 <footer>
   <p>Arul Bhardwaj. Write to me at <a href="mailto:arulbhardwaj@outlook.com">arulbhardwaj@outlook.com</a>.</p>
+  <p><a href="#top">Back to top</a></p>
 </footer>
 
 </div>
+<script>
+(function () {
+  var btn = document.querySelector('.copy'), status = document.querySelector('.copied');
+  if (btn && navigator.clipboard) {
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+        btn.textContent = 'Copied';
+        status.textContent = 'Email address copied';
+        setTimeout(function () { btn.textContent = 'Copy'; status.textContent = ''; }, 2000);
+      });
+    });
+  } else if (btn) { btn.hidden = true; }
+
+  var links = document.querySelectorAll('nav a[href^="#"]');
+  var nav = document.querySelector('nav');
+  var sections = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute('href')); });
+  function update() {
+    nav.classList.toggle('stuck', window.scrollY > 8);
+    var y = window.scrollY + window.innerHeight * 0.3, current = null;
+    sections.forEach(function (sec, i) { if (sec && sec.offsetTop <= y) current = i; });
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = sections.length - 1;
+    links.forEach(function (a, i) { if (i === current) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
 </body>
 </html>
