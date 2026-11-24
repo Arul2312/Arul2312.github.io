@@ -46,7 +46,7 @@
   </div>
   <h1><span class="line"><span>Arul</span></span><span class="line"><span>Bhardwaj</span></span></h1>
   <p class="contact">
-    <span class="email"><a href="mailto:arulbhardwaj@outlook.com">arulbhardwaj@outlook.com</a><button type="button" class="copy" data-copy="arulbhardwaj@outlook.com">Copy</button><span class="copied" role="status" aria-live="polite"></span></span>
+    <a href="mailto:arulbhardwaj@outlook.com">arulbhardwaj@outlook.com</a>
     <a href="https://github.com/Arul2312" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.linkedin.com/in/arul-bhardwaj-464482320" target="_blank" rel="noopener">LinkedIn</a>
   </p>
@@ -201,17 +201,6 @@
 </div>
 <script>
 (function () {
-  var btn = document.querySelector('.copy'), status = document.querySelector('.copied');
-  if (btn && navigator.clipboard) {
-    btn.addEventListener('click', function () {
-      navigator.clipboard.writeText(btn.dataset.copy).then(function () {
-        btn.textContent = 'Copied';
-        status.textContent = 'Email address copied';
-        setTimeout(function () { btn.textContent = 'Copy'; status.textContent = ''; }, 2000);
-      });
-    });
-  } else if (btn) { btn.hidden = true; }
-
   var reveal = document.querySelectorAll('main h2, .prose p, .rows li');
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.documentElement.classList.add('reveal-on');
