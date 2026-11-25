@@ -29,6 +29,8 @@ nav.compact .nav-logos { opacity: 1; transform: none; }
 .nav-logos .qc { height: 14px; }
 .nav-logos .bits { height: 30px; filter: grayscale(1) contrast(1.15); }
 nav a:hover { color: var(--blue); }
+.nav-links a.cv { color: var(--blue); border: 1px solid var(--blue); border-radius: 4px; padding: 2px 10px; }
+.nav-links a.cv:hover { background: var(--blue); color: #fff; }
 .nav-links a[aria-current] { color: var(--blue); border-bottom-color: var(--blue); }
 
 header { position: relative; isolation: isolate; padding: 56px 0 40px; }

@@ -26,6 +26,7 @@
     <a href="#research">Research</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a class="cv" href="cv.pdf" download="Arul_Bhardwaj_CV.pdf">Download CV</a>
   </div>
   <div class="nav-logos" aria-hidden="true">
     <img src="images/qualcomm.svg" alt="" class="qc">
@@ -194,7 +195,7 @@
 </main>
 
 <footer>
-  <p>Arul Bhardwaj. Write to me at <a href="mailto:arulbhardwaj@outlook.com">arulbhardwaj@outlook.com</a>.</p>
+  <p><a href="mailto:arulbhardwaj@outlook.com">arulbhardwaj@outlook.com</a></p>
   <p><a href="#top">Back to top</a></p>
 </footer>
 
@@ -211,7 +212,7 @@
     reveal.forEach(function (el) { io.observe(el); });
   }
 
-  var links = document.querySelectorAll('.nav-links a');
+  var links = document.querySelectorAll('.nav-links a[href^="#"]');
   var nav = document.querySelector('nav');
   var sections = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute('href')); });
   function update() {
